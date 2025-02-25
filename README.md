@@ -19,3 +19,7 @@
 - Wrote code to call OpenAI's frontier models.
 - Distinguished between System and User prompts.
 - Learned summarization techniques applicable to many commercial problems.
+
+**Resources**:
+
+- [day1.ipynb](./week1/day1.ipynb)
