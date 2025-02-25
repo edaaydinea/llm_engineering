@@ -1,6 +1,7 @@
 # LLM Engineering: Master AI, Large Language Models & Agents
 
 ## Table of Contents
+
 - [LLM Engineering: Master AI, Large Language Models \& Agents](#llm-engineering-master-ai-large-language-models--agents)
   - [Table of Contents](#table-of-contents)
   - [Week 1 - Build Your First LLM Product: Exploring Top Models \& Transformers](#week-1---build-your-first-llm-product-exploring-top-models--transformers)
