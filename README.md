@@ -7,7 +7,8 @@
   - [Week 1 - Build Your First LLM Product: Exploring Top Models \& Transformers](#week-1---build-your-first-llm-product-exploring-top-models--transformers)
     - [Day 1](#day-1)
     - [Day 2](#day-2)
-
+    - [Day 3](#day-3)
+    
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
 ### Day 1
@@ -38,3 +39,14 @@
 **Resources**:
 
 - [day2 EXERCISE.ipynb](./week1/day2%20EXERCISE.ipynb)
+
+### Day 3
+
+**What I did today:**
+
+- Reflected on the capabilities of six leading LLMs, emphasizing their power and convergence in performance.
+- Discussed evolving factors that differentiate these models, such as price and specific features.
+- Conducted a fun, unscientific leadership challenge between GPT-4, Claude 3 Opus, and Gemini 1.5 Pro.
+- Analyzed the pitches made by Alex (GPT-4), Blake (Claude 3 Opus), and Charlie (Gemini 1.5 Pro) for leadership.
+- Prepared for the next session, which will delve into the technical aspects of LLMs, including Transformers, tokens, context windows, parameters, and API costs.
+
