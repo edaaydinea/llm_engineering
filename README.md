@@ -8,6 +8,7 @@
     - [Day 1](#day-1)
     - [Day 2](#day-2)
     - [Day 3](#day-3)
+    - [Day 4](#day-4)
     
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -39,6 +40,7 @@
 **Resources**:
 
 - [day2 EXERCISE.ipynb](./week1/day2%20EXERCISE.ipynb)
+- [day2 notes.ipynb](./week1/notes/day2.ipynb)
 
 ### Day 3
 
@@ -50,3 +52,21 @@
 - Analyzed the pitches made by Alex (GPT-4), Blake (Claude 3 Opus), and Charlie (Gemini 1.5 Pro) for leadership.
 - Prepared for the next session, which will delve into the technical aspects of LLMs, including Transformers, tokens, context windows, parameters, and API costs.
 
+**Resources**:
+
+- [day3 notes.ipynb](./week1/notes/day3.ipynb)
+
+### Day 4
+
+**What I did today:**
+
+- Covered essential concepts like tokens, tokenization, context windows, and API costs.
+- Clarified the difference between the chat interface cost and the API cost.
+- Discussed the challenge of counting letters in a tokenized text.
+- Explained why some models were able to answer the "how many A's" question.
+- Practiced writing code to call the OpenAI API and local models like Llama.
+- Compared and contrasted different frontier LLMs.
+
+**Resources**:
+
+- [day4 notes.ipynb](./week1/notes/day4.ipynb)
