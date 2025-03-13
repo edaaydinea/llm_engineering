@@ -1,5 +1,9 @@
 # LLM Engineering: Master AI, Large Language Models & Agents
 
+This course provides a comprehensive guide to mastering AI, focusing on Large Language Models (LLMs) and agents. It covers essential concepts, practical coding exercises, and comparisons of leading LLMs to equip participants with the skills needed to build and deploy LLM-based solutions.
+
+[Enroll in the course on Udemy](https://udemy.com/course/llm-engineering-master-ai-and-large-language-models)
+
 ## Table of Contents
 
 - [LLM Engineering: Master AI, Large Language Models \& Agents](#llm-engineering-master-ai-large-language-models--agents)
@@ -9,7 +13,7 @@
     - [Day 2](#day-2)
     - [Day 3](#day-3)
     - [Day 4](#day-4)
-    
+
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
 ### Day 1
