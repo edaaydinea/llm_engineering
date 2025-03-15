@@ -13,6 +13,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 2](#day-2)
     - [Day 3](#day-3)
     - [Day 4](#day-4)
+    - [Day 5](#day-5)
+    - [Summary](#summary)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -74,3 +76,26 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 **Resources**:
 
 - [day4 notes.ipynb](./week1/notes/day4.ipynb)
+
+
+### Day 5
+
+**What I did today:**
+
+### Summary
+
+**What I did today:**
+
+- Successfully completed the first week, gaining a comprehensive understanding of Transformer models, tokenization techniques, and context window limitations.
+- Explored various frontier AI models, assessing their capabilities and constraints in real-world applications.
+- Developed practical experience with the OpenAI API, implementing streaming responses and markdown formatting.
+- Designed and built a personal AI tutor tool, applying multi-shot prompting to enhance interactions.
+- Experimented with system prompts to refine model responses based on tone, character, and instruction adherence.
+- Integrated the Llama API to facilitate efficient local model interactions.
+- Outlined key objectives for the upcoming week, including multi-model API usage, agent development, and UI implementation with Gradio.
+
+
+- [day5.ipynb](./week1/day5.ipynb)
+- [day5 notes.ipynb](./week1/notes/day5.ipynb)
+- [week1 EXERCISE.ipynb](./week1/week1%20EXERCISE.ipynb)
+- 
