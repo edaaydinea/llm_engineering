@@ -14,7 +14,6 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 3](#day-3)
     - [Day 4](#day-4)
     - [Day 5](#day-5)
-    - [Summary](#summary)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -78,10 +77,6 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day4 notes.ipynb](./week1/notes/day4.ipynb)
 
 ### Day 5
-
-**What I did today:**
-
-### Summary
 
 **What I did today:**
 
