@@ -77,7 +77,6 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day4 notes.ipynb](./week1/notes/day4.ipynb)
 
-
 ### Day 5
 
 **What I did today:**
@@ -94,8 +93,6 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - Integrated the Llama API to facilitate efficient local model interactions.
 - Outlined key objectives for the upcoming week, including multi-model API usage, agent development, and UI implementation with Gradio.
 
-
 - [day5.ipynb](./week1/day5.ipynb)
 - [day5 notes.ipynb](./week1/notes/day5.ipynb)
 - [week1 EXERCISE.ipynb](./week1/week1%20EXERCISE.ipynb)
-- 
