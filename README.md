@@ -14,6 +14,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 3](#day-3)
     - [Day 4](#day-4)
     - [Day 5](#day-5)
+  - [Week 2 - Build a Multi-Modal Chatbot: LLMs, Gradio UI, And Agents](#week-2---build-a-multi-modal-chatbot-llms-gradio-ui-and-agents)
+    - [Day 6](#day-6)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -91,3 +93,22 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day5.ipynb](./week1/day5.ipynb)
 - [day5 notes.ipynb](./week1/notes/day5.ipynb)
 - [week1 EXERCISE.ipynb](./week1/week1%20EXERCISE.ipynb)
+
+
+## Week 2 - Build a Multi-Modal Chatbot: LLMs, Gradio UI, And Agents
+
+### Day 6
+
+**What I did today:**
+
+- Successfully configured API keys for Anthropic (Claude) and Google (Gemini), expanding the toolkit for LLM development.
+- Demonstrated the ability to integrate and utilize OpenAI, Anthropic, and Google APIs within a JupyterLab environment, including setting parameters and streaming responses.
+- Implemented real-time LLM output by streaming responses from Claude and OpenAI, effectively handling markdown formatting.
+- Constructed multi-turn adversarial conversations between GPT-4-mini and Claude-3-haiku, showcasing the manipulation of message lists and system prompts.
+- Explored and compared the API structures and functionalities of OpenAI, Claude, and Gemini, highlighting their differences and similarities.
+- Applied temperature control to influence the creativity and randomness of LLM outputs, showcasing practical parameter adjustments.
+- Designed and executed a joke generation experiment to compare the humor capabilities of different LLMs, providing insights into their creative outputs.
+- Reviewed and understood the key components of Transformers, including context windows, tokens, and API costs, reinforcing foundational knowledge.
+
+- [day1.ipynb](./week2/day1.ipynb)
+- [day1 notes.ipynb](./week2/notes/day1.ipynb)
