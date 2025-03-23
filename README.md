@@ -110,5 +110,5 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - Designed and executed a joke generation experiment to compare the humor capabilities of different LLMs, providing insights into their creative outputs.
 - Reviewed and understood the key components of Transformers, including context windows, tokens, and API costs, reinforcing foundational knowledge.
 
-- [day1.ipynb](./week2/day1.ipynb)
+- [day1.ipynb](./week2/notebooks/day1.ipynb)
 - [day1 notes.ipynb](./week2/notes/day1.ipynb)
