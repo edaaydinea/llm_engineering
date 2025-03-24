@@ -16,6 +16,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 5](#day-5)
   - [Week 2 - Build a Multi-Modal Chatbot: LLMs, Gradio UI, And Agents](#week-2---build-a-multi-modal-chatbot-llms-gradio-ui-and-agents)
     - [Day 6](#day-6)
+    - [Day 7](#day-7)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -112,3 +113,21 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day1.ipynb](./week2/notebooks/day1.ipynb)
 - [day1 notes.ipynb](./week2/notes/day1.ipynb)
+
+
+### Day 7
+
+**What I did today:*
+
+- Developed proficiency in using Gradio for rapid UI prototyping, specifically for machine learning models and LLMs.
+- Implemented basic Gradio interfaces, including text input/output and function integration.
+- Learned to share Gradio UIs via local web servers and public URLs.
+- Integrated OpenAI's GPT models into Gradio UIs for interactive applications.
+- Implemented streaming responses and markdown formatting in Gradio interfaces for enhanced user experience.
+- Successfully built a multi-model UI, allowing users to switch between GPT-4, GPT-4-mini, GPT-o1, an GPT-o3-mini models.
+- Constructed a company brochure generator application using Gradio, integrating web scraping and LLM API calls.
+- Gained experience in creating dynamic and interactive applications with Gradio for LLM-based tasks.
+- Prepared for future development of chat UIs and customer support assistants, enhancing prompt context.
+
+- [day2.ipynb](./week2/notebooks/day2.ipynb)
+- [day2 notes.ipynb](./week2/notes/day2.ipynb)
