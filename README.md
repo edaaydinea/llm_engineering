@@ -17,6 +17,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
   - [Week 2 - Build a Multi-Modal Chatbot: LLMs, Gradio UI, And Agents](#week-2---build-a-multi-modal-chatbot-llms-gradio-ui-and-agents)
     - [Day 6](#day-6)
     - [Day 7](#day-7)
+    - [Day 8](#day-8)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -131,3 +132,21 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day2.ipynb](./week2/notebooks/day2.ipynb)
 - [day2 notes.ipynb](./week2/notes/day2.ipynb)
+
+
+### Day 8
+
+**What I did today:*
+
+- Developed functional chatbot user interfaces using Gradio's `ChatInterface` and OpenAI's API.
+- Implemented context management in chatbots by passing the entire conversation history to the LLM with each interaction.
+- Utilized system prompts to define chatbot personas, subject matter expertise, and conversation rules.
+- Applied one-shot and multi-shot prompting techniques to guide chatbot responses and incorporate dynamic context.
+- Constructed OpenAI API message structures, understanding the roles of "system," "user," and "assistant."
+- Gained practical experience in converting message structures into tokens for LLM processing, including special tokens.
+- Enhanced chatbot functionality by dynamically altering system messages based on user input for improved context.
+- Previewed the upcoming exploration of "tools," focusing on empowering LLMs to execute code and perform specific functionalities.
+
+
+- [day3.ipynb](./week2/notebooks/day3.ipynb)
+- [day3 notes.ipynb](./week2/notes/day3.ipynb)
