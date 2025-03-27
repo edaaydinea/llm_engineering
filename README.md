@@ -18,6 +18,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 6](#day-6)
     - [Day 7](#day-7)
     - [Day 8](#day-8)
+    - [Day 9](#day-9)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -92,6 +93,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - Integrated the Llama API to facilitate efficient local model interactions.
 - Outlined key objectives for the upcoming week, including multi-model API usage, agent development, and UI implementation with Gradio.
 
+**Resources**:
+
 - [day5.ipynb](./week1/day5.ipynb)
 - [day5 notes.ipynb](./week1/notes/day5.ipynb)
 - [week1 EXERCISE.ipynb](./week1/week1%20EXERCISE.ipynb)
@@ -112,6 +115,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - Designed and executed a joke generation experiment to compare the humor capabilities of different LLMs, providing insights into their creative outputs.
 - Reviewed and understood the key components of Transformers, including context windows, tokens, and API costs, reinforcing foundational knowledge.
 
+**Resources**:
+
 - [day1.ipynb](./week2/notebooks/day1.ipynb)
 - [day1 notes.ipynb](./week2/notes/day1.ipynb)
 
@@ -130,6 +135,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - Gained experience in creating dynamic and interactive applications with Gradio for LLM-based tasks.
 - Prepared for future development of chat UIs and customer support assistants, enhancing prompt context.
 
+**Resources**:
+
 - [day2.ipynb](./week2/notebooks/day2.ipynb)
 - [day2 notes.ipynb](./week2/notes/day2.ipynb)
 
@@ -147,6 +154,24 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - Enhanced chatbot functionality by dynamically altering system messages based on user input for improved context.
 - Previewed the upcoming exploration of "tools," focusing on empowering LLMs to execute code and perform specific functionalities.
 
+**Resources**:
 
 - [day3.ipynb](./week2/notebooks/day3.ipynb)
 - [day3 notes.ipynb](./week2/notes/day3.ipynb)
+
+### Day 9
+
+**What I did today:*
+
+- Implemented and utilized "tools" to enhance LLM capabilities, enabling interaction with external functions.
+- Developed a `get_ticket_price` function, demonstrating the ability to integrate custom functions with LLMs for practical applications.
+- Constructed a dictionary structure to define function parameters and descriptions, facilitating LLM understanding and usage.
+- Handled LLM requests to execute external tools by parsing JSON arguments and returning tool results.
+- Built an airline customer service assistant that retrieves ticket prices based on city destinations using the OpenAI API and custom tools.
+- Explored the workflow of equipping LLMs with tools, including defining, passing, and handling tool calls.
+- Prepared for the next session, which will cover agent development and multi-modality, focusing on complex task handling and image generation.
+
+**Resources**:
+
+- [day4.ipynb](./week2/notebooks/day4.ipynb)
+- [day4 notes.ipynb](./week2/notes/day4.ipynb)
