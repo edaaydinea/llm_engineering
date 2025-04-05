@@ -19,6 +19,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 7](#day-7)
     - [Day 8](#day-8)
     - [Day 9](#day-9)
+    - [Day 10](#day-10)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -175,3 +176,28 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day4.ipynb](./week2/notebooks/day4.ipynb)
 - [day4 notes.ipynb](./week2/notes/day4.ipynb)
+
+### Day 10
+
+**What I did today:**
+
+- Gained an understanding of autonomous software agents and agent frameworks, recognizing their goal-oriented and task-specific nature.
+- Learned how agent frameworks facilitate complex problem-solving with minimal human intervention by leveraging various tools.
+- Developed a function to generate images using Dall-E 3, exploring its potential for creative image generation from text prompts.
+- Integrated text-to-speech functionality using OpenAI's audio API, experimenting with different voice options for audio output.
+- Utilized Python libraries such as PIL and Pi Dub for processing generated images and audio.
+- Began building a multimodal AI assistant capable of generating both images and audio responses, enhancing user interaction.
+- Explored the combination of task breakdown and tool utilization within an agent framework to build a more sophisticated chatbot.
+- Integrated a text-to-speech model into the chatbot, enabling it to audibly communicate its responses.
+- Implemented a feature where the chatbot triggers an image generation model based on the context of the conversation, such as displaying a city image when discussing ticket prices.
+- Started developing a more complex user interface with Gradio to accommodate multimodal interactions, including displaying generated images.
+- Reviewed the developed multimodal airline AI assistant and identified key challenges for further enhancement.
+- Understood the first challenge involves adding a tool to simulate booking confirmations.
+- Recognized the second challenge is to integrate a translation agent using a different LLM (like Claude) to translate responses.
+- Identified the third multimodal challenge as incorporating an audio-to-text agent to enable voice input for the AI assistant.
+- Prepared for the upcoming week's focus on the open-source LLM ecosystem, including Hugging Face, pipelines, tokenizers, and running inference on open-source models.
+
+**Resources**:
+
+- [day5.ipynb](./week2/notebooks/day5.ipynb)
+- [day5 notes.ipynb](./week2/notes/day5.ipynb)
