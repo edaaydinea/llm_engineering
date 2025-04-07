@@ -20,6 +20,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 8](#day-8)
     - [Day 9](#day-9)
     - [Day 10](#day-10)
+  - [Week 3: Open-Source Gen AI: Building Automated Solutions with HuggingFace](#week-3-open-source-gen-ai-building-automated-solutions-with-huggingface)
+    - [Day 11](#day-11)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -201,3 +203,26 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day5.ipynb](./week2/notebooks/day5.ipynb)
 - [day5 notes.ipynb](./week2/notes/day5.ipynb)
+
+
+## Week 3: Open-Source Gen AI: Building Automated Solutions with HuggingFace
+
+### Day 11
+
+**What I did today:**
+
+- Gained a foundational understanding of Hugging Face as a key open-source platform for the data science community, encompassing models, datasets, and application deployment.
+- Explored the Hugging Face Hub, navigating its extensive collection of over 800,000 models and 200,000 datasets, and understanding the search and filtering functionalities.
+- Became familiar with Hugging Face Spaces as a platform for running and sharing AI applications, often built with Gradio or Streamlit, and observed examples of deployed models and leaderboards.
+- Successfully set up a personal Hugging Face account and generated an access token with necessary permissions for programmatic interaction with the Hub.
+- Acquired practical knowledge of Google Colaboratory (Colab) as a cloud-based Jupyter notebook environment, emphasizing its ease of use, collaboration features, and integration with Google services.
+- Learned to manage Colab runtimes, including selecting CPU and various GPU options (T4, A100), and understood the cost implications for different resource utilization.
+- Mastered the process of integrating Hugging Face with Google Colab by securely storing and accessing API keys using Colab's "Secrets" feature.
+- Executed basic Python code in Colab and verified GPU availability using command-line tools, confirming the environment's readiness for machine learning tasks.
+- Witnessed a practical demonstration of running an open-source text-to-image model (Flux) within Google Colab, highlighting the potential of leveraging cloud GPUs for AI applications.
+- Understood the upcoming focus on utilizing Hugging Face's different API levels, starting with pipelines, for various AI tasks such as text, image, and audio generation.
+
+**Resources**:
+
+- [day1.ipynb](./week3/notebooks/day1.ipynb)
+- [day1 notes.ipynb](./week3/notes/day1.ipynb)
