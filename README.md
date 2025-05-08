@@ -22,6 +22,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 10](#day-10)
   - [Week 3: Open-Source Gen AI: Building Automated Solutions with HuggingFace](#week-3-open-source-gen-ai-building-automated-solutions-with-huggingface)
     - [Day 11](#day-11)
+    - [Day 12](#day-12)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -226,3 +227,22 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day1.ipynb](./week3/notebooks/day1.ipynb)
 - [day1 notes.ipynb](./week3/notes/day1.ipynb)
+
+### Day 12
+
+**What I did today:**
+
+- Successfully gained a foundational understanding of the Hugging Face Transformers library, including its dual API design with high-level Pipelines for rapid task execution and lower-level components for custom development.
+- Developed hands-on proficiency in using Hugging Face Pipelines for executing a wide range of AI inference tasks with minimal code, significantly simplifying the application of pre-trained models.
+- Implemented various Natural Language Processing (NLP) pipelines, covering tasks such as sentiment analysis, named entity recognition (NER), question answering, text summarization, translation, and zero-shot classification.
+- Mastered the technique of assigning pipelines to GPU resources (device="cuda") for accelerated model inference and improved computational performance.
+- Explored multimodal AI capabilities by generating images from text prompts using the diffusers library in conjunction with models like Stable Diffusion through the Hugging Face ecosystem.
+- Achieved practical experience with audio generation, specifically implementing text-to-speech (TTS) pipelines and customizing voice output through the use of speaker embeddings.
+- Ensured a functional development environment by successfully installing and managing key Python libraries such as transformers, datasets, and diffusers within a Google Colab setting.
+- Learned to effectively customize pipeline operations by selecting specific pre-trained models from the Hugging Face Hub, tailoring solutions to particular task requirements beyond default configurations.
+- Completed an intensive learning module focused on Mastering Hugging Face Pipelines, thereby advancing skills in efficient AI inference for a variety of machine learning tasks.
+
+**Resources**:
+
+- [day2.ipynb](./week3/notebooks/day2.ipynb)
+- [day2 notes.ipynb](./week3/notes/day2.ipynb)
