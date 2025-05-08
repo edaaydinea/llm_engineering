@@ -24,6 +24,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 11](#day-11)
     - [Day 12](#day-12)
     - [Day 13](#day-13)
+    - [Day 14](#day-14)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -268,3 +269,25 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day3.ipynb](./week3/notebooks/day3.ipynb)
 - [day3 notes.ipynb](./week3/notes/day3.ipynb)
+
+### Day 14
+
+**What I did today:**
+
+- Gained a comprehensive understanding of the Hugging Face Model Class, enabling lower-level control over inference processes for open-source transformer models.
+- Acquired practical experience in loading, inspecting, and running inference on various open-source models such as Llama 3.1, Phi 3, and Gemma 2, including comparative analysis of their outputs.
+- Mastered the application of quantization techniques, specifically using `BitsAndBytesConfig` to load models in 4-bit precision, significantly reducing memory footprint and improving inference speed while observing coherent outputs.
+- Developed proficiency in managing the end-to-end text generation pipeline, including tokenizer initialization with `AutoTokenizer`, chat template application, and model loading via `AutoModelForCausalLM`.
+- Implemented text generation using `model.generate()` and successfully decoded output tokens back to human-readable text.
+- Explored and implemented real-time, token-by-token output streaming using the `TextStreamer` class to enhance user experience in interactive applications.
+- Enhanced understanding of model architectures by inspecting underlying PyTorch layers and their dimensions (e.g., vocabulary size, embedding layers, attention mechanisms).
+- Practiced essential memory management techniques, including object deletion and GPU cache clearing (`torch.cuda.empty_cache()`), crucial for working with large models in resource-constrained environments.
+- Developed a reusable Python function encapsulating model loading, tokenization, quantized inference with streaming, and resource cleanup for efficient experimentation.
+- Recognized the importance of model-specific prompting and differences in behavior across various open-source language models.
+- Consolidated knowledge of Hugging Face Transformers library, encompassing pipelines, tokenizers, and direct model class interactions, preparing for future projects involving both open-source and frontier model APIs.
+  
+
+**Resources**:
+
+- [day4.ipynb](./week3/notebooks/day4.ipynb)
+- [day4 notes.ipynb](./week3/notes/day4.ipynb)
