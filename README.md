@@ -23,6 +23,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
   - [Week 3: Open-Source Gen AI: Building Automated Solutions with HuggingFace](#week-3-open-source-gen-ai-building-automated-solutions-with-huggingface)
     - [Day 11](#day-11)
     - [Day 12](#day-12)
+    - [Day 13](#day-13)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -246,3 +247,24 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day2.ipynb](./week3/notebooks/day2.ipynb)
 - [day2 notes.ipynb](./week3/notes/day2.ipynb)
+
+### Day 13
+
+**What I did today:**
+
+- Gained a comprehensive understanding of tokenizer functionalities within the Hugging Face Transformers library, including the processes of encoding text into numerical tokens and decoding tokens back into human-readable text.
+- Mastered the critical concept of model-specificity in tokenizers, recognizing that each transformer model requires its designated tokenizer for accurate inference and to prevent performance degradation.
+- Explored essential tokenizer components, such as the vocabulary (vocab), special tokens (e.g., `start of sentence`, `end of sentence`), and chat templates, understanding their role in guiding model behavior and structuring conversational input.
+- Investigated the diversity in tokenization strategies across various open-source models, including Llama 3.1, Phi-3, Qwen2 (multilingual), and StarCoder 2 (code generation), noting how these strategies are tailored to model-specific tasks and training data.
+- Acquired practical experience in setting up the Hugging Face environment, including API token login and adherence to model-specific Terms of Service for models like Llama 3.1.
+- Developed proficiency in using `AutoTokenizer.from_pretrained()` to load appropriate tokenizers, and core methods like `tokenizer.encode()`, `tokenizer.decode()`, and `tokenizer.batch_decode()` for text processing and detailed token inspection.
+- Learned to utilize `tokenizer.apply_chat_template()` to correctly format conversational histories for instruct fine-tuned models, ensuring appropriate inclusion of special tokens and model-specific structuring for dialogue.
+- Compared the distinct tokenization outputs and chat template structures of Llama 3.1, Phi-3, and Qwen2, reinforcing the necessity of using the correct tokenizer and chat format for each model.
+- Examined the specialized nature of tokenizers for domain-specific models like StarCoder 2, observing its optimization for handling programming code syntax and constructs.
+- Understood the nuances of tokenization, such as case sensitivity, the handling of spaces, sub-word tokenization, and the typical token-to-character ratio, for more accurate input preparation and analysis.
+- Solidified the foundational knowledge required to transition from high-level pipelines to direct interaction with models for advanced text generation tasks.
+
+**Resources**:
+
+- [day3.ipynb](./week3/notebooks/day3.ipynb)
+- [day3 notes.ipynb](./week3/notes/day3.ipynb)
