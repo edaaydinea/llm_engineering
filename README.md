@@ -25,6 +25,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 12](#day-12)
     - [Day 13](#day-13)
     - [Day 14](#day-14)
+    - [Day 15](#day-15)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -105,7 +106,6 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day5 notes.ipynb](./week1/notes/day5.ipynb)
 - [week1 EXERCISE.ipynb](./week1/week1%20EXERCISE.ipynb)
 
-
 ## Week 2 - Build a Multi-Modal Chatbot: LLMs, Gradio UI, And Agents
 
 ### Day 6
@@ -126,7 +126,6 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day1.ipynb](./week2/notebooks/day1.ipynb)
 - [day1 notes.ipynb](./week2/notes/day1.ipynb)
 
-
 ### Day 7
 
 **What I did today:*
@@ -145,7 +144,6 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day2.ipynb](./week2/notebooks/day2.ipynb)
 - [day2 notes.ipynb](./week2/notes/day2.ipynb)
-
 
 ### Day 8
 
@@ -206,7 +204,6 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day5.ipynb](./week2/notebooks/day5.ipynb)
 - [day5 notes.ipynb](./week2/notes/day5.ipynb)
-
 
 ## Week 3: Open-Source Gen AI: Building Automated Solutions with HuggingFace
 
@@ -286,8 +283,30 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - Recognized the importance of model-specific prompting and differences in behavior across various open-source language models.
 - Consolidated knowledge of Hugging Face Transformers library, encompassing pipelines, tokenizers, and direct model class interactions, preparing for future projects involving both open-source and frontier model APIs.
   
-
 **Resources**:
 
 - [day4.ipynb](./week3/notebooks/day4.ipynb)
 - [day4 notes.ipynb](./week3/notes/day4.ipynb)
+
+### Day 15
+
+**What I did today:**
+
+- Designed an AI system to generate structured meeting minutes from audio recordings, combining frontier and open-source models for a practical business application.
+- Leveraged frontier models via API for accurate speech-to-text transcription and open-source models hosted locally via Hugging Face for text summarization and action item extraction.
+- Utilized publicly available audio recordings of council meetings from Hugging Face datasets as realistic input data for development.
+- Solidified understanding of Hugging Face ecosystem tools, including pipelines, tokenizers, and models for inference with open-source Large Language Models (LLMs).
+- Accessed and processed data from Google Drive within a Google Colab environment, using the "Meeting Bank" dataset for the meeting minutes generation project.
+- Implemented audio-to-text transcription using OpenAI's `whisper-1` model API.
+- Employed the `meta-llama/Meta-Llama-3.1-8B-Instruct` model from Hugging Face for generating structured meeting minutes in Markdown format, guided by specific system and user prompts.
+- Applied 4-bit quantization techniques to the Llama 3.1 model, enabling efficient inference on standard Colab GPUs.
+- Integrated `TextStreamer` from Hugging Face Transformers to display generated text token by token in real-time, enhancing user experience.
+- Successfully formatted the LLM output in Markdown for clear and structured presentation of meeting minutes.
+- Defined the end-of-week challenge to build a synthetic test data generator using an open-source model, recognizing its broad applicability.
+- Recapped key skills from week 3, including working with frontier models, building complex AI assistants, and integrating diverse model types using Hugging Face tools.
+- Previewed upcoming week 4 topics, focusing on LLM selection strategies using leaderboards and arenas, and practical code generation with various models.
+
+**Resources**:
+
+- [day5.ipynb](./week3/notebooks/day5.ipynb)
+- [day5 notes.ipynb](./week3/notes/day5.ipynb)
