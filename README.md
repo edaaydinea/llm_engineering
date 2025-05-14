@@ -350,3 +350,21 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 **Resources:**
 
 - [day2 notes.ipynb](./week4/notes/day2.ipynb)
+
+### Day 18
+
+**What I did today:**
+
+* Initiated a project to build a Python to C++ code conversion tool, focusing first on leveraging frontier LLMs (GPT-4o and Claude 3.5 Sonnet) to enhance runtime performance, using a Pi calculation script via the Leibniz formula as the initial test case.
+* Set up the development environment in JupyterLab for the code conversion challenge, selected GPT-4o and Claude 3.5 Sonnet based on coding leaderboards (Vellum.ai, Scale AI SEAL), and engineered detailed system and user prompts, including model-specific hints for GPT-4o regarding C++ type handling and header inclusions.
+* Developed Python utility functions to interact with OpenAI and Anthropic APIs for code generation, including features for streaming responses and saving the generated C++ code.
+* Successfully translated a Python Pi calculation script to C++ using both GPT-4 and Claude, achieving a significant speed-up (approx. 40x, from 8.57s to 0.21s) with the C++ versions compiled and executed.
+* Encountered and analyzed a code generation failure where GPT-4's C++ conversion of a "maximum subarray sum" Python script (with a custom LCG for reproducibility) produced an incorrect result, likely due to an integer overflow, highlighting the need for careful validation.
+* Observed Claude's superior performance in the "maximum subarray sum" challenge, where it not only generated correct C++ code but also, on a second attempt, re-implemented the solution using a highly efficient single-loop algorithm (Kadane's), achieving a ~13,000x speedup (27s to 2ms) over the brute-force Python version.
+* Developed a Gradio user interface for the Python to C++ code converter, allowing users to input Python code, select between GPT and Claude models, and view the streamed C++ translation in real-time, including output cleaning.
+* Enhanced the Gradio prototype UI to include functionality for executing both the input Python code and the AI-generated C++ code directly within the interface, displaying their outputs and execution times for immediate comparison, and utilized more extensive C++ compiler optimization flags.
+* Conducted final comparative tests on the "Python Hard" (maximum subarray sum) challenge using the enhanced UI, confirming GPT-4's difficulties and observing Claude's ability to provide both a correct direct translation (0.6s) and a remarkably optimized algorithmic solution (0.4ms) on subsequent attempts.
+
+**Resources:**
+
+- [day3 notes.ipynb](./week4/notes/day3.ipynb)
