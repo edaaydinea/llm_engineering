@@ -26,6 +26,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 13](#day-13)
     - [Day 14](#day-14)
     - [Day 15](#day-15)
+  - [Week 4 - LLM Showdown: Evaluating Models for Code Generation \& Business Tasks](#week-4---llm-showdown-evaluating-models-for-code-generation--business-tasks)
+    - [Day 16](#day-16)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -310,3 +312,23 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day5.ipynb](./week3/notebooks/day5.ipynb)
 - [day5 notes.ipynb](./week3/notes/day5.ipynb)
+
+## Week 4 - LLM Showdown: Evaluating Models for Code Generation & Business Tasks
+
+### Day 16
+
+**What I did today:**
+
+- Gained a foundational understanding of task-centric Large Language Model (LLM) selection, emphasizing the evaluation of basic attributes such as open vs. closed-source, technical specifications (parameter count, context window, knowledge cutoff date updated to May 2025), cost implications, operational factors, and licensing terms prior to performance benchmarking.
+- Explored the Chinchilla Scaling Law, learning its principle of proportional scaling between model parameters and training data size for optimal LLM performance and efficient resource allocation.
+- Became acquainted with a diverse suite of common LLM benchmarks (including ARC, DROP, HellaSwag, MMLU, TruthfulQA, Winogrande, and GSM8K) used to assess varied model capabilities like reasoning, comprehension, and problem-solving.
+- Delved into specialized benchmarks, understanding the application of Elo ratings for conversational AI evaluation, HumanEval for Python code generation, and MultiPL-E for assessing multilingual coding proficiency.
+- Developed a critical perspective on LLM benchmark limitations, including issues of inconsistent application, narrow scope, challenges in measuring nuanced reasoning, risks of training data leakage, and the problem of models overfitting to specific benchmarks, alongside the emerging concern of potential model awareness during evaluation.
+- Learned about "next-level" benchmarks (GPQA, BBH, MATH Level 5, IFEval, MuSR, and MMLU-Pro) designed to more rigorously test advanced LLMs on deeper reasoning, expert knowledge (noting Claude 3.5 Sonnet's 59.4% on GPQA prior to May 2025), and complex instruction following.
+- Acquired proficiency in navigating and utilizing the Hugging Face Open LLM Leaderboard, understanding its evolutin to incorporate more challenging benchmarks (GPQA, MMLU-Pro, MuSR, etc., launched around June 2024 contextually) and its features for filtering and ranking open-source models like Qwen2, Phi-3, Llama 3.1, and Mistral.
+- Recognized the completion of a significant course portion (40%), establishing a solid groundwork for comparing open-source and proprietary LLMs and understanding the nuances of their evaluation metrics.
+- Understood the plan to expand knowledge to a broader landscape of leaderboards, encompassing closed-source models, and to explore real-world commercial LLM applications, aiming to develop a comprehensive strategy for selecting optimal LLMs for specific projects and prototyping.
+
+**Resources**:
+
+- [day1 notes.ipynb](./week4/notes/day1.ipynb)
