@@ -28,6 +28,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 15](#day-15)
   - [Week 4 - LLM Showdown: Evaluating Models for Code Generation \& Business Tasks](#week-4---llm-showdown-evaluating-models-for-code-generation--business-tasks)
     - [Day 16](#day-16)
+    - [Day 17](#day-17)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -332,3 +333,20 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 **Resources**:
 
 - [day1 notes.ipynb](./week4/notes/day1.ipynb)
+
+### Day 17
+
+**What I did today:**
+
+- Broadened understanding of Large Language Model (LLM) evaluation by exploring six essential leaderboards beyond the primary Hugging Face Open LLM Leaderboard, including specialized Hugging Face leaderboards (BigCode, LLM Perf, domain-specific, language-specific), Vellum's Leaderboard, the SEAL Leaderboard, and the LMSYS Chatbot Arena.
+- Gained insights into specialized Hugging Face leaderboards, focusing on the BigCode Models Leaderboard for code generation, the LLM Perf Leaderboard for performance metrics (speed, accuracy, memory), and the availability of domain-specific (e.g., Open Medical LLM) and language-specific leaderboards.
+- Investigated external leaderboards like Vellum.ai's platform for comparing open-source and closed-source models, including practical metrics like API costs, speed, latency, and context window sizes.
+- Explored Scale AI's SEAL Leaderboard, which evaluates models on specialized expert skills such as adversarial robustness, coding, and nuanced instruction following for both open and closed-source LLMs.
+- Learned about the LMSYS Chatbot Arena as a platform for evaluating LLMs' conversational abilities through human judgment and an Elo rating system, and understood the value of human preference in assessing interaction quality.
+- Reviewed diverse commercial applications of LLMs across industries, including legal (Harvey), talent/recruitment (Nebula.io), legacy code porting (Bloop AI), healthcare (Salesforce Einstein Copilot Health Actions), and education (Khan Academy's Khanmigo), to understand practical model selection context.
+- Understood the practical application of LLM evaluation through a new challenge: developing a Python to C++ code conversion tool, which will involve selecting and comparing both frontier and open-source models based on acquired knowledge of leaderboards and benchmarks.
+- Solidified the ability to confidently choose appropriate LLMs for specific projects by interpreting results from various leaderboards, arenas, and understanding the importance of factors like performance on coding benchmarks (HumanEval, MultiPL-E), instruction following (IFEval), and context window size.
+
+**Resources:**
+
+- [day2 notes.ipynb](./week4/notes/day2.ipynb)
