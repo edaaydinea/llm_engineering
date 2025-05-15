@@ -29,6 +29,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
   - [Week 4 - LLM Showdown: Evaluating Models for Code Generation \& Business Tasks](#week-4---llm-showdown-evaluating-models-for-code-generation--business-tasks)
     - [Day 16](#day-16)
     - [Day 17](#day-17)
+    - [Day 18](#day-18)
+    - [Day 19](#day-19)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -355,16 +357,33 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 **What I did today:**
 
-* Initiated a project to build a Python to C++ code conversion tool, focusing first on leveraging frontier LLMs (GPT-4o and Claude 3.5 Sonnet) to enhance runtime performance, using a Pi calculation script via the Leibniz formula as the initial test case.
-* Set up the development environment in JupyterLab for the code conversion challenge, selected GPT-4o and Claude 3.5 Sonnet based on coding leaderboards (Vellum.ai, Scale AI SEAL), and engineered detailed system and user prompts, including model-specific hints for GPT-4o regarding C++ type handling and header inclusions.
-* Developed Python utility functions to interact with OpenAI and Anthropic APIs for code generation, including features for streaming responses and saving the generated C++ code.
-* Successfully translated a Python Pi calculation script to C++ using both GPT-4 and Claude, achieving a significant speed-up (approx. 40x, from 8.57s to 0.21s) with the C++ versions compiled and executed.
-* Encountered and analyzed a code generation failure where GPT-4's C++ conversion of a "maximum subarray sum" Python script (with a custom LCG for reproducibility) produced an incorrect result, likely due to an integer overflow, highlighting the need for careful validation.
-* Observed Claude's superior performance in the "maximum subarray sum" challenge, where it not only generated correct C++ code but also, on a second attempt, re-implemented the solution using a highly efficient single-loop algorithm (Kadane's), achieving a ~13,000x speedup (27s to 2ms) over the brute-force Python version.
-* Developed a Gradio user interface for the Python to C++ code converter, allowing users to input Python code, select between GPT and Claude models, and view the streamed C++ translation in real-time, including output cleaning.
-* Enhanced the Gradio prototype UI to include functionality for executing both the input Python code and the AI-generated C++ code directly within the interface, displaying their outputs and execution times for immediate comparison, and utilized more extensive C++ compiler optimization flags.
-* Conducted final comparative tests on the "Python Hard" (maximum subarray sum) challenge using the enhanced UI, confirming GPT-4's difficulties and observing Claude's ability to provide both a correct direct translation (0.6s) and a remarkably optimized algorithmic solution (0.4ms) on subsequent attempts.
+- Initiated a project to build a Python to C++ code conversion tool, focusing first on leveraging frontier LLMs (GPT-4o and Claude 3.5 Sonnet) to enhance runtime performance, using a Pi calculation script via the Leibniz formula as the initial test case.
+- Set up the development environment in JupyterLab for the code conversion challenge, selected GPT-4o and Claude 3.5 Sonnet based on coding leaderboards (Vellum.ai, Scale AI SEAL), and engineered detailed system and user prompts, including model-specific hints for GPT-4o regarding C++ type handling and header inclusions.
+- Developed Python utility functions to interact with OpenAI and Anthropic APIs for code generation, including features for streaming responses and saving the generated C++ code.
+- Successfully translated a Python Pi calculation script to C++ using both GPT-4 and Claude, achieving a significant speed-up (approx. 40x, from 8.57s to 0.21s) with the C++ versions compiled and executed.
+- Encountered and analyzed a code generation failure where GPT-4's C++ conversion of a "maximum subarray sum" Python script (with a custom LCG for reproducibility) produced an incorrect result, likely due to an integer overflow, highlighting the need for careful validation.
+- Observed Claude's superior performance in the "maximum subarray sum" challenge, where it not only generated correct C++ code but also, on a second attempt, re-implemented the solution using a highly efficient single-loop algorithm (Kadane's), achieving a ~13,000x speedup (27s to 2ms) over the brute-force Python version.
+- Developed a Gradio user interface for the Python to C++ code converter, allowing users to input Python code, select between GPT and Claude models, and view the streamed C++ translation in real-time, including output cleaning.
+- Enhanced the Gradio prototype UI to include functionality for executing both the input Python code and the AI-generated C++ code directly within the interface, displaying their outputs and execution times for immediate comparison, and utilized more extensive C++ compiler optimization flags.
+- Conducted final comparative tests on the "Python Hard" (maximum subarray sum) challenge using the enhanced UI, confirming GPT-4's difficulties and observing Claude's ability to provide both a correct direct translation (0.6s) and a remarkably optimized algorithmic solution (0.4ms) on subsequent attempts.
 
 **Resources:**
 
 - [day3 notes.ipynb](./week4/notes/day3.ipynb)
+
+### Day 19
+
+**What I did today:**
+
+- Explored the use of open-source LLMs, particularly CodeQwen, for code generation tasks and their deployment via Hugging Face Inference Endpoints.
+- Mastered interaction with deployed models using the `InferenceClient` from `huggingface_hub`, managing tokenization and chat templating.
+- Developed a Gradio UI to compare the performance of CodeQwen, GPT-4, and Claude in Python to C++ code conversion.
+- Assessed the capabilities and limitations of a 7B parameter open-source CodeQwen model against larger frontier models in handling complex code generation tasks.
+- Acquired skills in selecting appropriate LLMs for code generation, understanding the trade-offs between open-source and frontier models based on task complexity and resource constraints.
+- Deepened prompt engineering skills specific to code generation by exploring techniques to influence LLM behavior.
+- Leveraged the Big Code Models Leaderboard for informed model selection, prioritizing performance metrics for optimal results.
+- Recapped key concepts, including efficient code generation via various models and the significance of parameter counts in model performance.
+
+**Resources:**
+
+- [day4 notes.ipynb](./week4/notes/day4.ipynb)
