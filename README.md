@@ -31,6 +31,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 17](#day-17)
     - [Day 18](#day-18)
     - [Day 19](#day-19)
+    - [Day 20](#day-20)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -387,3 +388,22 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 **Resources:**
 
 - [day4 notes.ipynb](./week4/notes/day4.ipynb)
+
+### Day 20
+
+**What I did today:**
+
+- Mastered the fundamental principles of evaluating Large Language Model (LLM) performance, distinguishing between model-centric technical metrics and business-centric outcome metrics.
+- Gained a comprehensive understanding of key model-centric metrics, including cross-entropy loss (defined as $$ L = -\log(P(\text{actual next token}))$$
+) and perplexity (calculated as
+$$P = e^{L}$$
+), and their application in the iterative optimization of LLMs.
+- Understood the critical importance of aligning technical model performance with business Key Performance Indicators (KPIs) to demonstrate real-world value and impact of AI solutions.
+- Analyzed the comparative performance of frontier models (e.g., Claude 3.5 Sonnet, GPT-4) versus open-source LLMs (e.g., CodeQwen) in practical code generation tasks, noting current capability differences and the value propositions of each.
+- Outlined and prepared to tackle a series of advanced LLM engineering assignments, including enhancing multi-model code translation tools, developing utilities for automated code commenting and unit test generation, and conceptualizing a code generator for simulated stock trading.
+- Reinforced the understanding of effective prompt engineering and evaluation strategies for LLM-generated code, focusing on correctness, efficiency, and adherence to specific constraints.
+- Successfully completed 50% of the "LLM Engineer" learning path and anticipated the upcoming module on Retrieval Augmented Generation (RAG).
+
+**Resources:**
+
+- [day5 notes.ipynb](./week4/notes/day5.ipynb)
