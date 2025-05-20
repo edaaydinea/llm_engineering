@@ -32,6 +32,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 18](#day-18)
     - [Day 19](#day-19)
     - [Day 20](#day-20)
+  - [Week 5 - Mastering RAG: Build Advanced Solutions with Vector Embeddings \& LangChain](#week-5---mastering-rag-build-advanced-solutions-with-vector-embeddings--langchain)
+    - [Day 21](#day-21)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -407,3 +409,28 @@ $$P = e^{L}$$
 **Resources:**
 
 - [day5 notes.ipynb](./week4/notes/day5.ipynb)
+
+## Week 5 - Mastering RAG: Build Advanced Solutions with Vector Embeddings & LangChain
+
+### Day 21
+
+**What I did today:**
+
+- Acquired a fundamental understanding of Retrieval Augmented Generation (RAG) as a method to improve Large Language Model (LLM) responses by dynamically incorporating external data, addressing knowledge cut-offs and enabling access to private datasets.
+- Explored the core mechanics of a RAG system, including the integration of local knowledge bases and the process of enriching prompts with retrieved context to make LLMs more factual and context-aware.
+- Gained hands-on experience by outlining the steps to build a "Do-It-Yourself" RAG system, involving loading fictitious company documents into a Python dictionary to serve as a simple knowledge base.
+- Implemented a basic keyword-based string matching algorithm for context retrieval and a function to dynamically augment user prompts with this retrieved information.
+- Utilized a system prompt to guide the LLM towards providing accurate, grounded answers and to explicitly state when information is unknown, thereby mitigating hallucinations.
+- Developed a conceptual understanding of using Gradio to create an interactive interface for testing the RAG system and observing the impact of contextual data on LLM outputs.
+- Critically assessed the limitations of the naive keyword-based RAG, noting its brittleness and lack of scalability, which highlighted the necessity for more advanced retrieval techniques.
+- Delved into the concept of vector embeddings, understanding them as numerical representations of text where semantic similarity is denoted by proximity in a high-dimensional space.
+- Distinguished between autoregressive LLMs for generation and autoencoding LLMs (e.g., BERT, OpenAI embeddings) used for creating these crucial vector embeddings.
+- Comprehended the advanced RAG workflow that leverages vector embeddings for semantic search: vectorizing user queries, searching a vector data store for similar document embeddings, and using the retrieved text to provide relevant context to a generative LLM.
+- Recognized that vector embedding-based retrieval is significantly more robust than keyword matching, focusing on semantic meaning rather than exact string occurrences.
+- Identified key related technologies for future exploration, including various embedding models, vector databases (e.g., Pinecone, Weaviate), similarity metrics, and the LangChain framework for implementing sophisticated RAG systems.
+
+
+**Resources:**
+
+- [day1 notes.ipynb](./week5/notes/day1.ipynb)
+- [day1.ipynb](./week5/notebooks/day1.ipynb)
