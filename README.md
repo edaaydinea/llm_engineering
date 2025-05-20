@@ -34,6 +34,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 20](#day-20)
   - [Week 5 - Mastering RAG: Build Advanced Solutions with Vector Embeddings \& LangChain](#week-5---mastering-rag-build-advanced-solutions-with-vector-embeddings--langchain)
     - [Day 21](#day-21)
+    - [Day 22](#day-22)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -429,8 +430,28 @@ $$P = e^{L}$$
 - Recognized that vector embedding-based retrieval is significantly more robust than keyword matching, focusing on semantic meaning rather than exact string occurrences.
 - Identified key related technologies for future exploration, including various embedding models, vector databases (e.g., Pinecone, Weaviate), similarity metrics, and the LangChain framework for implementing sophisticated RAG systems.
 
-
 **Resources:**
 
 - [day1 notes.ipynb](./week5/notes/day1.ipynb)
 - [day1.ipynb](./week5/notebooks/day1.ipynb)
+
+### Day 22
+
+**What I did today:**
+
+- Acquired a comprehensive understanding of LangChain as a framework designed to streamline the development of LLM applications, particularly for Retrieval Augmented Generation (RAG) by simplifying component integration and API interactions.
+- Learned to leverage LangChain's `DirectoryLoader` and `TextLoader` for efficiently ingesting documents from various sources within a knowledge base.
+- Gained practical experience in programmatically assigning custom metadata, such as `doctype`, to loaded documents, enhancing data organization for RAG pipelines.
+- Mastered the use of LangChain's `CharacterTextSplitter` to segment documents into appropriately sized and overlapping text chunks, optimizing them for subsequent vectorization and retrieval.
+- Explored the configuration of `chunk_size` and `chunk_overlap` parameters to balance context preservation and granularity in the chunking process.
+- Understood the significance of LangChain's `Document` object structure, which encapsulates both page content and associated metadata for loaded documents and their resulting chunks.
+- Recognized the benefits of LangChain's text splitters attempting to respect "sensible boundaries" in text, leading to more coherent and meaningful chunks.
+- Reinforced the limitations of basic keyword searching through hands-on examples, further underscoring the necessity of semantic search for robust RAG systems.
+- Successfully prepared a dataset of text chunks with associated metadata, laying the groundwork for their conversion into vector embeddings using OpenAI models.
+- Understood the upcoming steps involving the use of OpenAI's embedding models for vectorization and the subsequent storage and visualization of these embeddings in the Chroma vector database.
+- Appreciated LangChain's LLM API abstraction feature, which allows for easier experimentation and switching between different LLM providers.
+
+**Resources:**
+
+- [day2 notes.ipynb](./week5/notes/day2.ipynb)
+- [day2.ipynb](./week5/notebooks/day2.ipynb)
