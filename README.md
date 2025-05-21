@@ -35,6 +35,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
   - [Week 5 - Mastering RAG: Build Advanced Solutions with Vector Embeddings \& LangChain](#week-5---mastering-rag-build-advanced-solutions-with-vector-embeddings--langchain)
     - [Day 21](#day-21)
     - [Day 22](#day-22)
+    - [Day 23](#day-23)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -455,3 +456,19 @@ $$P = e^{L}$$
 
 - [day2 notes.ipynb](./week5/notes/day2.ipynb)
 - [day2.ipynb](./week5/notebooks/day2.ipynb)
+
+### Day 23
+
+**What I did today:**
+
+- Acquired a comprehensive understanding of text embeddings, contrasting traditional methods with advanced deep learning models like OpenAI's, and their significance in capturing semantic meaning for LLM engineering.
+- Gained practical experience in generating high-dimensional text embeddings from document chunks using OpenAI models via LangChain and efficiently storing them in a Chroma vector database, including managing the database lifecycle.
+- Utilized t-SNE for dimensionality reduction and employed Plotly to create interactive 2D and 3D visualizations of embedding spaces, enabling the exploration of complex semantic structures.
+- Analyzed the visualized embeddings, observing how semantically similar text chunks naturally cluster and how nuanced relationships between document categories are represented by proximity in vector space, affirming the contextual understanding of the embedding models.
+- Recognized LangChain's efficiency in abstracting complex vector operations and its flexibility in allowing component interchangeability, such as swapping vector databases (e.g., Chroma for FAISS) with minimal code modifications.
+- Established a foundational understanding of vector database operations and embedding interpretation, preparing for the development of advanced Retrieval Augmented Generation (RAG) pipelines that will incorporate conversational memory.
+
+**Resources:**
+
+- [day3 notes.ipynb](./week5/notes/day3.ipynb)
+- [day3.ipynb](./week5/notebooks/day3.ipynb)
