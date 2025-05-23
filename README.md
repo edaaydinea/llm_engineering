@@ -9,37 +9,39 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [LLM Engineering: Master AI, Large Language Models \& Agents](#llm-engineering-master-ai-large-language-models--agents)
   - [Table of Contents](#table-of-contents)
   - [Week 1 - Build Your First LLM Product: Exploring Top Models \& Transformers](#week-1---build-your-first-llm-product-exploring-top-models--transformers)
-    - [Day 1](#day-1)
-    - [Day 2](#day-2)
-    - [Day 3](#day-3)
-    - [Day 4](#day-4)
-    - [Day 5](#day-5)
+    - [Day 1: Introduction to LLMs and Summarization](#day-1-introduction-to-llms-and-summarization)
+    - [Day 2: Running Open-Source LLMs Locally and Summarizing Websites](#day-2-running-open-source-llms-locally-and-summarizing-websites)
+    - [Day 3: LLM Showdown and Leadership Challenge](#day-3-llm-showdown-and-leadership-challenge)
+    - [Day 4: Tokens, Tokenization, and API Cost Analysis](#day-4-tokens-tokenization-and-api-cost-analysis)
+    - [Day 5: Building a Personal AI Tutor and Multi-Shot Prompting](#day-5-building-a-personal-ai-tutor-and-multi-shot-prompting)
   - [Week 2 - Build a Multi-Modal Chatbot: LLMs, Gradio UI, And Agents](#week-2---build-a-multi-modal-chatbot-llms-gradio-ui-and-agents)
-    - [Day 6](#day-6)
-    - [Day 7](#day-7)
-    - [Day 8](#day-8)
-    - [Day 9](#day-9)
-    - [Day 10](#day-10)
+    - [Day 6: Multi-Model API Integration and Streaming Responses](#day-6-multi-model-api-integration-and-streaming-responses)
+    - [Day 7: Rapid UI Prototyping with Gradio and LLM Integration](#day-7-rapid-ui-prototyping-with-gradio-and-llm-integration)
+    - [Day 8: Building Contextual Chatbots with System Prompts](#day-8-building-contextual-chatbots-with-system-prompts)
+    - [Day 9: Equipping LLMs with Tools and Function Calling](#day-9-equipping-llms-with-tools-and-function-calling)
+    - [Day 10: Building a Multimodal AI Assistant with Agents](#day-10-building-a-multimodal-ai-assistant-with-agents)
   - [Week 3: Open-Source Gen AI: Building Automated Solutions with HuggingFace](#week-3-open-source-gen-ai-building-automated-solutions-with-huggingface)
-    - [Day 11](#day-11)
-    - [Day 12](#day-12)
-    - [Day 13](#day-13)
-    - [Day 14](#day-14)
-    - [Day 15](#day-15)
+    - [Day 11: Exploring Hugging Face Hub and Colab for AI](#day-11-exploring-hugging-face-hub-and-colab-for-ai)
+    - [Day 12: Mastering Hugging Face Pipelines for NLP and Multimodal Tasks](#day-12-mastering-hugging-face-pipelines-for-nlp-and-multimodal-tasks)
+    - [Day 13: Tokenizers and Chat Templates in Hugging Face Transformers](#day-13-tokenizers-and-chat-templates-in-hugging-face-transformers)
+    - [Day 14: Direct Model Inference and Quantization with Hugging Face](#day-14-direct-model-inference-and-quantization-with-hugging-face)
+    - [Day 15: Meeting Minutes Generator with Audio and Open-Source LLMs](#day-15-meeting-minutes-generator-with-audio-and-open-source-llms)
   - [Week 4 - LLM Showdown: Evaluating Models for Code Generation \& Business Tasks](#week-4---llm-showdown-evaluating-models-for-code-generation--business-tasks)
-    - [Day 16](#day-16)
-    - [Day 17](#day-17)
-    - [Day 18](#day-18)
-    - [Day 19](#day-19)
-    - [Day 20](#day-20)
+    - [Day 16: LLM Selection, Benchmarks, and Leaderboards](#day-16-llm-selection-benchmarks-and-leaderboards)
+    - [Day 17: Exploring LLM Leaderboards and Real-World Applications](#day-17-exploring-llm-leaderboards-and-real-world-applications)
+    - [Day 18: Python to C++ Code Conversion with Frontier LLMs](#day-18-python-to-c-code-conversion-with-frontier-llms)
+    - [Day 19: Open-Source Code Generation and Model Comparison](#day-19-open-source-code-generation-and-model-comparison)
+    - [Day 20: Evaluating LLMs: Metrics and Business Impact](#day-20-evaluating-llms-metrics-and-business-impact)
   - [Week 5 - Mastering RAG: Build Advanced Solutions with Vector Embeddings \& LangChain](#week-5---mastering-rag-build-advanced-solutions-with-vector-embeddings--langchain)
-    - [Day 21](#day-21)
-    - [Day 22](#day-22)
-    - [Day 23](#day-23)
+    - [Day 21: Introduction to RAG and Keyword-Based Retrieval](#day-21-introduction-to-rag-and-keyword-based-retrieval)
+    - [Day 22: Document Loading, Chunking, and Metadata with LangChain](#day-22-document-loading-chunking-and-metadata-with-langchain)
+    - [Day 23: Embeddings, Vector Databases, and Visualization](#day-23-embeddings-vector-databases-and-visualization)
+    - [Day 24: Deploying Conversational RAG with Chroma and FAISS](#day-24-deploying-conversational-rag-with-chroma-and-faiss)
+    - [Day 25: Mastering and Debugging RAG: Advanced Troubleshooting, LCEL, and Personal Knowledge Workers](#day-25-mastering-and-debugging-rag-advanced-troubleshooting-lcel-and-personal-knowledge-workers)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
-### Day 1
+### Day 1: Introduction to LLMs and Summarization
 
 **What I did today:**
 
@@ -54,7 +56,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day1.ipynb](./week1/day1.ipynb)
 
-### Day 2
+### Day 2: Running Open-Source LLMs Locally and Summarizing Websites
 
 **What I did today:**
 
@@ -69,7 +71,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day2 EXERCISE.ipynb](./week1/day2%20EXERCISE.ipynb)
 - [day2 notes.ipynb](./week1/notes/day2.ipynb)
 
-### Day 3
+### Day 3: LLM Showdown and Leadership Challenge
 
 **What I did today:**
 
@@ -83,7 +85,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day3 notes.ipynb](./week1/notes/day3.ipynb)
 
-### Day 4
+### Day 4: Tokens, Tokenization, and API Cost Analysis
 
 **What I did today:**
 
@@ -98,7 +100,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day4 notes.ipynb](./week1/notes/day4.ipynb)
 
-### Day 5
+### Day 5: Building a Personal AI Tutor and Multi-Shot Prompting
 
 **What I did today:**
 
@@ -118,7 +120,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 ## Week 2 - Build a Multi-Modal Chatbot: LLMs, Gradio UI, And Agents
 
-### Day 6
+### Day 6: Multi-Model API Integration and Streaming Responses
 
 **What I did today:**
 
@@ -136,9 +138,9 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day1.ipynb](./week2/notebooks/day1.ipynb)
 - [day1 notes.ipynb](./week2/notes/day1.ipynb)
 
-### Day 7
+### Day 7: Rapid UI Prototyping with Gradio and LLM Integration
 
-**What I did today:*
+**What I did today:**
 
 - Developed proficiency in using Gradio for rapid UI prototyping, specifically for machine learning models and LLMs.
 - Implemented basic Gradio interfaces, including text input/output and function integration.
@@ -155,9 +157,9 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day2.ipynb](./week2/notebooks/day2.ipynb)
 - [day2 notes.ipynb](./week2/notes/day2.ipynb)
 
-### Day 8
+### Day 8: Building Contextual Chatbots with System Prompts
 
-**What I did today:*
+**What I did today:**
 
 - Developed functional chatbot user interfaces using Gradio's `ChatInterface` and OpenAI's API.
 - Implemented context management in chatbots by passing the entire conversation history to the LLM with each interaction.
@@ -173,9 +175,9 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day3.ipynb](./week2/notebooks/day3.ipynb)
 - [day3 notes.ipynb](./week2/notes/day3.ipynb)
 
-### Day 9
+### Day 9: Equipping LLMs with Tools and Function Calling
 
-**What I did today:*
+**What I did today:**
 
 - Implemented and utilized "tools" to enhance LLM capabilities, enabling interaction with external functions.
 - Developed a `get_ticket_price` function, demonstrating the ability to integrate custom functions with LLMs for practical applications.
@@ -190,7 +192,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day4.ipynb](./week2/notebooks/day4.ipynb)
 - [day4 notes.ipynb](./week2/notes/day4.ipynb)
 
-### Day 10
+### Day 10: Building a Multimodal AI Assistant with Agents
 
 **What I did today:**
 
@@ -217,7 +219,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 ## Week 3: Open-Source Gen AI: Building Automated Solutions with HuggingFace
 
-### Day 11
+### Day 11: Exploring Hugging Face Hub and Colab for AI
 
 **What I did today:**
 
@@ -237,7 +239,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day1.ipynb](./week3/notebooks/day1.ipynb)
 - [day1 notes.ipynb](./week3/notes/day1.ipynb)
 
-### Day 12
+### Day 12: Mastering Hugging Face Pipelines for NLP and Multimodal Tasks
 
 **What I did today:**
 
@@ -256,7 +258,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day2.ipynb](./week3/notebooks/day2.ipynb)
 - [day2 notes.ipynb](./week3/notes/day2.ipynb)
 
-### Day 13
+### Day 13: Tokenizers and Chat Templates in Hugging Face Transformers
 
 **What I did today:**
 
@@ -277,7 +279,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day3.ipynb](./week3/notebooks/day3.ipynb)
 - [day3 notes.ipynb](./week3/notes/day3.ipynb)
 
-### Day 14
+### Day 14: Direct Model Inference and Quantization with Hugging Face
 
 **What I did today:**
 
@@ -298,7 +300,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 - [day4.ipynb](./week3/notebooks/day4.ipynb)
 - [day4 notes.ipynb](./week3/notes/day4.ipynb)
 
-### Day 15
+### Day 15: Meeting Minutes Generator with Audio and Open-Source LLMs
 
 **What I did today:**
 
@@ -323,7 +325,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 ## Week 4 - LLM Showdown: Evaluating Models for Code Generation & Business Tasks
 
-### Day 16
+### Day 16: LLM Selection, Benchmarks, and Leaderboards
 
 **What I did today:**
 
@@ -341,7 +343,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day1 notes.ipynb](./week4/notes/day1.ipynb)
 
-### Day 17
+### Day 17: Exploring LLM Leaderboards and Real-World Applications
 
 **What I did today:**
 
@@ -358,7 +360,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day2 notes.ipynb](./week4/notes/day2.ipynb)
 
-### Day 18
+### Day 18: Python to C++ Code Conversion with Frontier LLMs
 
 **What I did today:**
 
@@ -376,7 +378,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day3 notes.ipynb](./week4/notes/day3.ipynb)
 
-### Day 19
+### Day 19: Open-Source Code Generation and Model Comparison
 
 **What I did today:**
 
@@ -393,7 +395,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
 
 - [day4 notes.ipynb](./week4/notes/day4.ipynb)
 
-### Day 20
+### Day 20: Evaluating LLMs: Metrics and Business Impact
 
 **What I did today:**
 
@@ -414,7 +416,7 @@ $$P = e^{L}$$
 
 ## Week 5 - Mastering RAG: Build Advanced Solutions with Vector Embeddings & LangChain
 
-### Day 21
+### Day 21: Introduction to RAG and Keyword-Based Retrieval
 
 **What I did today:**
 
@@ -436,7 +438,7 @@ $$P = e^{L}$$
 - [day1 notes.ipynb](./week5/notes/day1.ipynb)
 - [day1.ipynb](./week5/notebooks/day1.ipynb)
 
-### Day 22
+### Day 22: Document Loading, Chunking, and Metadata with LangChain
 
 **What I did today:**
 
@@ -457,7 +459,7 @@ $$P = e^{L}$$
 - [day2 notes.ipynb](./week5/notes/day2.ipynb)
 - [day2.ipynb](./week5/notebooks/day2.ipynb)
 
-### Day 23
+### Day 23: Embeddings, Vector Databases, and Visualization
 
 **What I did today:**
 
@@ -472,3 +474,38 @@ $$P = e^{L}$$
 
 - [day3 notes.ipynb](./week5/notes/day3.ipynb)
 - [day3.ipynb](./week5/notebooks/day3.ipynb)
+
+### Day 24: Deploying Conversational RAG with Chroma and FAISS
+
+**What I did today:**
+
+- Explored advanced RAG pipeline deployment using both Chroma and FAISS vector stores for document retrieval.
+- Compared the practical differences between Chroma and FAISS in terms of integration, visualization, and retrieval performance within LangChain.
+- Implemented and visualized high-dimensional embeddings using t-SNE and Plotly for both vector store types, confirming semantic clustering of document types.
+- Built and tested conversational RAG agents using LangChain's `ConversationalRetrievalChain` abstraction, integrating memory, retriever, and LLM components.
+- Deployed the RAG chat assistant in Gradio, enabling interactive Q&A grounded in the knowledge base, and validated multi-turn conversational context.
+- Reflected on the modularity of LangChain's retriever abstraction, facilitating easy switching between vector store backends for experimentation and production.
+- Solidified understanding of end-to-end RAG system construction, from document ingestion and chunking to embedding, storage, retrieval, and conversational deployment.
+
+**Resources:**
+
+- [day4.ipynb](./week5/notebooks/day4.ipynb)
+- [day4.5.ipynb](./week5/notebooks/day4.5.ipynb)
+- [day4 notes.ipynb](./week5/notes/day4.ipynb)
+
+
+### Day 25: Mastering and Debugging RAG: Advanced Troubleshooting, LCEL, and Personal Knowledge Workers
+
+**What I did today:**
+
+- Explored advanced RAG troubleshooting techniques, including using LangChain callbacks to inspect prompts and retrieved context for debugging.
+- Learned to optimize RAG retrieval by tuning retriever parameters (e.g., increasing `k`) and adjusting chunking strategies to improve answer accuracy.
+- Investigated the LangChain Expression Language (LCEL) for declarative pipeline configuration and compared it to Python-based workflows.
+- Understood the differences between in-memory (FAISS) and persistent (Chroma) vector stores, and how to seamlessly switch between them in LangChain.
+- Applied best practices for building robust, production-ready RAG systems, including observability, context management, and privacy-preserving local embeddings.
+- Received a challenge to build a personal AI knowledge worker using private data and local vectorization for productivity enhancement.
+
+**Resources:**
+
+- [day5.ipynb](./week5/notebooks/day5.ipynb)
+- [day5 notes.ipynb](./week5/notes/day5.ipynb)
