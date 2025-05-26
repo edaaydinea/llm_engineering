@@ -38,6 +38,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 23: Embeddings, Vector Databases, and Visualization](#day-23-embeddings-vector-databases-and-visualization)
     - [Day 24: Deploying Conversational RAG with Chroma and FAISS](#day-24-deploying-conversational-rag-with-chroma-and-faiss)
     - [Day 25: Mastering and Debugging RAG: Advanced Troubleshooting, LCEL, and Personal Knowledge Workers](#day-25-mastering-and-debugging-rag-advanced-troubleshooting-lcel-and-personal-knowledge-workers)
+  - [Week 6: Fine-tuning Frontier Large Language Models with LoRA/QLoRA](#week-6-fine-tuning-frontier-large-language-models-with-loraqlora)
+    - [Day 26: Building a Product Pricer - Data Curation Part 1](#day-26-building-a-product-pricer---data-curation-part-1)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -509,3 +511,31 @@ $$P = e^{L}$$
 
 - [day5.ipynb](./week5/notebooks/day5.ipynb)
 - [day5 notes.ipynb](./week5/notes/day5.ipynb)
+
+## Week 6: Fine-tuning Frontier Large Language Models with LoRA/QLoRA
+
+### Day 26: Building a Product Pricer - Data Curation Part 1
+
+**What I did today:**
+
+- Commenced "The Big Project: Product Pricer," aiming to develop a model that estimates product costs based on their descriptions.
+- Began the data curation process, initially focusing on the "Home Appliances" category from the McAuley-Lab Amazon Reviews 2023 dataset.
+- Loaded the dataset and performed initial exploratory data analysis, including:
+  - Determining the total number of products in the "Appliances" category.
+  - Identifying the proportion of products with valid price information.
+  - Visualizing the distribution of product description character lengths and product prices using histograms.
+- Developed an `Item` class (in `week6/notebooks/items.py` and used in `week6/notebooks/day1.ipynb`) to encapsulate the logic for cleaning, processing, and preparing individual product data points for model training. Key functionalities of the `Item` class include:
+  - Scrubbing product details to remove common boilerplate text that offers little predictive value.
+  - Cleaning product titles and descriptions by removing extraneous characters, excessive whitespace, and potentially irrelevant alphanumeric codes (e.g., product numbers).
+  - Parsing raw product data (title, description, features, details) and combining them into a cohesive text.
+  - Filtering products based on minimum character length and truncating content to fit within a specified token limit (150-160 tokens for product information) using the tokenizer for "meta-llama/Meta-Llama-3.1-8B".
+  - Generating a structured prompt for fine-tuning, including a question ("How much does this cost to the nearest dollar?"), the curated product text, and the target price formatted as "Price is $X.00".
+- Applied the `Item` class to the "Appliances" dataset, creating a curated list of `Item` objects suitable for training.
+- Inspected examples of the generated training prompts and test prompts (which exclude the actual price).
+- Analyzed the distribution of token counts and prices for the successfully curated items to understand the characteristics of the training dataset.
+
+**Resources:**
+
+- [day1.ipynb](./week6/notebooks/day1.ipynb)
+- [items.py](./week6/notebooks/items.py)
+- [day1 notes.ipynb](./week6/notes/day1.ipynb)
