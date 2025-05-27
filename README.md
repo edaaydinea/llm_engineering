@@ -40,6 +40,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 25: Mastering and Debugging RAG: Advanced Troubleshooting, LCEL, and Personal Knowledge Workers](#day-25-mastering-and-debugging-rag-advanced-troubleshooting-lcel-and-personal-knowledge-workers)
   - [Week 6: Fine-tuning Frontier Large Language Models with LoRA/QLoRA](#week-6-fine-tuning-frontier-large-language-models-with-loraqlora)
     - [Day 26: Building a Product Pricer - Data Curation Part 1](#day-26-building-a-product-pricer---data-curation-part-1)
+    - [Day 27: Building a Product Pricer - Data Curation Part 2](#day-27-building-a-product-pricer---data-curation-part-2)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -495,7 +496,6 @@ $$P = e^{L}$$
 - [day4.5.ipynb](./week5/notebooks/day4.5.ipynb)
 - [day4 notes.ipynb](./week5/notes/day4.ipynb)
 
-
 ### Day 25: Mastering and Debugging RAG: Advanced Troubleshooting, LCEL, and Personal Knowledge Workers
 
 **What I did today:**
@@ -539,3 +539,33 @@ $$P = e^{L}$$
 - [day1.ipynb](./week6/notebooks/day1.ipynb)
 - [items.py](./week6/notebooks/items.py)
 - [day1 notes.ipynb](./week6/notes/day1.ipynb)
+
+### Day 27: Building a Product Pricer - Data Curation Part 2
+
+**What I did today:**
+
+- Reviewed the five-step strategy for developing and deploying Large Language Model (LLM) solutions: Understand, Prepare, Select, Customize, and Productionize.
+- Analyzed three core LLM optimization techniques:
+  - **Prompting**: Agile, low-cost, and ideal for rapid iteration.
+  - **Retrieval Augmented Generation (RAG)**: Enhances accuracy by leveraging external, up-to-date knowledge sources.
+  - **Fine-tuning**: Enables deep model specialization and nuanced understanding, suitable for complex tasks with sufficient data.
+- Explored best practices for "Productionizing" LLMs (Step 5), including API definition, hosting, deployment, monitoring, security, scaling, measuring business impact, and establishing a continuous retraining loop.
+- Delved into advanced data curation strategies for the product pricer project:
+  - Implemented an `ItemLoader` class with `concurrent.futures.ProcessPoolExecutor` for efficient parallel data ingestion from Hugging Face, significantly reducing loading times.
+  - Applied strategic price-range filtering ($0.50 to $999.49) to stabilize model training and focus the project scope.
+  - Refined a large dataset of 2.8 million items down to approximately 408,000 by:
+    - "Slotting" items by integer dollar price.
+    - Applying stratified and weighted sampling, giving higher selection weight to non-automotive categories for items under $240, to improve representation of higher-priced items and balance product categories.
+- Conducted final dataset analysis:
+  - Investigated the correlation between product description length and price (found to be weak).
+  - Examined Llama tokenizer's handling of prices, noting that numerical values up to 999 are often mapped to single tokens.
+- Finalized the dataset by:
+  - Shuffling with a fixed random seed for reproducibility.
+  - Splitting into a 400,000-item training set and a 2,000-item test set.
+  - Saving the curated data locally (pickle files) and preparing it for upload to the Hugging Face Hub.
+- Successfully uploaded the curated dataset to the Hugging Face Hub.
+
+**Resources:**
+
+- [day2 notes.ipynb](./week6/notes/day2.ipynb)
+- [day2.ipynb](./week6/notebooks/day2.ipynb)
