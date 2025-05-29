@@ -42,6 +42,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 26: Building a Product Pricer - Data Curation Part 1](#day-26-building-a-product-pricer---data-curation-part-1)
     - [Day 27: Building a Product Pricer - Data Curation Part 2](#day-27-building-a-product-pricer---data-curation-part-2)
     - [Day 28: Building a Product Pricer - Baseline Models](#day-28-building-a-product-pricer---baseline-models)
+    - [Day 29: Building a Product Pricer - Frontier Model Benchmarks](#day-29-building-a-product-pricer---frontier-model-benchmarks)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -578,32 +579,56 @@ $$P = e^{L}$$
 - Commenced the development of baseline models for the "Product Pricer" project to establish a performance benchmark for subsequent LLM-based approaches.
 - Loaded the curated training (`train.pkl`) and test (`test.pkl`) datasets prepared in the previous data curation phase.
 - Implemented a comprehensive `Tester` class to evaluate various pricing models. This class:
-    - Takes a predictor function as input.
-    - Runs predictions on a subset of the test data (250 items).
-    - Calculates and reports key metrics: average error, Root Mean Squared Log Error (RMSLE), and hit rate (percentage of "good" predictions).
-    - Generates a scatter plot visualizing ground truth prices versus model estimates.
+  - Takes a predictor function as input.
+  - Runs predictions on a subset of the test data (250 items).
+  - Calculates and reports key metrics: average error, Root Mean Squared Log Error (RMSLE), and hit rate (percentage of "good" predictions).
+  - Generates a scatter plot visualizing ground truth prices versus model estimates.
 - Developed and evaluated several baseline models using the `Tester` class:
-    - **Random Pricer**: Assigns a random price between $1 and $1000.
-    - **Constant Pricer**: Predicts the average price observed in the training dataset for all items.
-    - **Traditional Linear Regression Pricer**:
-        - Engineered features from item details: `Item Weight`, `Best Sellers Rank`, `text_length` (of the product description), and a binary flag `is_top_electronics_brand`.
-        - Trained a `sklearn.linear_model.LinearRegression` model on these features.
-    - **Bag-of-Words (BoW) Linear Regression Pricer**:
-        - Used `sklearn.feature_extraction.text.CountVectorizer` (max 1000 features, English stop words) to create BoW representations from product descriptions (`item.test_prompt()` to avoid data leakage).
-        - Trained a Linear Regression model on these BoW features.
-    - **Word2Vec Linear Regression Pricer**:
-        - Preprocessed documents using `gensim.utils.simple_preprocess`.
-        - Trained a `gensim.models.Word2Vec` model (400 dimensions, window 5, min_count 1) on the training documents.
-        - Created document vectors by averaging the Word2Vec vectors of words in each document.
-        - Trained a Linear Regression model on these document vectors.
-    - **Support Vector Regressor (SVR) Pricer**:
-        - Trained an `sklearn.svm.LinearSVR` model using the Word2Vec document vectors.
-    - **Random Forest Pricer**:
-        - Trained an `sklearn.ensemble.RandomForestRegressor` (100 estimators) using the Word2Vec document vectors.
+  - **Random Pricer**: Assigns a random price between $1 and $1000.
+  - **Constant Pricer**: Predicts the average price observed in the training dataset for all items.
+  - **Traditional Linear Regression Pricer**:
+    - Engineered features from item details: `Item Weight`, `Best Sellers Rank`, `text_length` (of the product description), and a binary flag `is_top_electronics_brand`.
+    - Trained a `sklearn.linear_model.LinearRegression` model on these features.
+  - **Bag-of-Words (BoW) Linear Regression Pricer**:
+    - Used `sklearn.feature_extraction.text.CountVectorizer` (max 1000 features, English stop words) to create BoW representations from product descriptions (`item.test_prompt()` to avoid data leakage).
+    - Trained a Linear Regression model on these BoW features.
+  - **Word2Vec Linear Regression Pricer**:
+    - Preprocessed documents using `gensim.utils.simple_preprocess`.
+    - Trained a `gensim.models.Word2Vec` model (400 dimensions, window 5, min_count 1) on the training documents.
+    - Created document vectors by averaging the Word2Vec vectors of words in each document.
+    - Trained a Linear Regression model on these document vectors.
+  - **Support Vector Regressor (SVR) Pricer**:
+    - Trained an `sklearn.svm.LinearSVR` model using the Word2Vec document vectors.
+  - **Random Forest Pricer**:
+    - Trained an `sklearn.ensemble.RandomForestRegressor` (100 estimators) using the Word2Vec document vectors.
 - Analyzed the performance of each baseline model, noting their respective strengths and weaknesses as indicated by the evaluation metrics and visualizations. This provides a solid foundation for comparing the performance of more advanced fine-tuned LLMs.
 
 **Resources:**
 
 - [day3 notes.ipynb](./week6/notes/day3.ipynb)
 - [day3.ipynb](./week6/notebooks/day3.ipynb)
+
+### Day 29: Building a Product Pricer - Frontier Model Benchmarks
+
+**What I did today:**
+
+- Continued the "Product Pricer" project by evaluating Frontier Large Language Models to establish high-performance benchmarks.
+- Loaded the curated test dataset (`test.pkl`).
+- Utilized the `Tester` class (from `testing.py`) for standardized evaluation of different pricing models.
+- **Human Performance Baseline**:
+  - Evaluated a "Human Pricer" by loading predictions from `human_output.csv` (populated based on `human_input.csv`), providing a human-level benchmark.
+- **Frontier Model Evaluation**:
+  - Discussed the context of evaluating Frontier Models: they are tested zero-shot on the test data without specific fine-tuning on the project's training set. Acknowledged the potential for test data contamination due to their extensive pre-training data.
+  - Developed a prompt structure (`messages_for` function) to query models for price estimates, instructing them to reply only with the price and removing phrases like "to the nearest dollar."
+  - Implemented a utility function (`get_price`) using regular expressions to extract numerical price values from the models' text responses.
+  - Systematically evaluated the performance of the following Frontier Models using the `Tester` class:
+    - **GPT-4o-mini**: Assessed its price prediction capabilities.
+    - **GPT-4o (August 2024 model)**: Evaluated the performance of the larger and more current GPT-4o version.
+    - **Claude 3.5 Sonnet**: Tested Anthropic's model to compare its pricing accuracy.
+- The results from these Frontier Models serve as critical benchmarks against which the project's custom fine-tuned models will be compared in subsequent stages.
+
+**Resources:**
+
+- [day4 notes.ipynb](./week6/notes/day4.ipynb)
+- [day4.ipynb](./week6/notebooks/day4.ipynb)
 
