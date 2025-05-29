@@ -41,6 +41,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
   - [Week 6: Fine-tuning Frontier Large Language Models with LoRA/QLoRA](#week-6-fine-tuning-frontier-large-language-models-with-loraqlora)
     - [Day 26: Building a Product Pricer - Data Curation Part 1](#day-26-building-a-product-pricer---data-curation-part-1)
     - [Day 27: Building a Product Pricer - Data Curation Part 2](#day-27-building-a-product-pricer---data-curation-part-2)
+    - [Day 28: Building a Product Pricer - Baseline Models](#day-28-building-a-product-pricer---baseline-models)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -569,3 +570,40 @@ $$P = e^{L}$$
 
 - [day2 notes.ipynb](./week6/notes/day2.ipynb)
 - [day2.ipynb](./week6/notebooks/day2.ipynb)
+
+### Day 28: Building a Product Pricer - Baseline Models
+
+**What I did today:**
+
+- Commenced the development of baseline models for the "Product Pricer" project to establish a performance benchmark for subsequent LLM-based approaches.
+- Loaded the curated training (`train.pkl`) and test (`test.pkl`) datasets prepared in the previous data curation phase.
+- Implemented a comprehensive `Tester` class to evaluate various pricing models. This class:
+    - Takes a predictor function as input.
+    - Runs predictions on a subset of the test data (250 items).
+    - Calculates and reports key metrics: average error, Root Mean Squared Log Error (RMSLE), and hit rate (percentage of "good" predictions).
+    - Generates a scatter plot visualizing ground truth prices versus model estimates.
+- Developed and evaluated several baseline models using the `Tester` class:
+    - **Random Pricer**: Assigns a random price between $1 and $1000.
+    - **Constant Pricer**: Predicts the average price observed in the training dataset for all items.
+    - **Traditional Linear Regression Pricer**:
+        - Engineered features from item details: `Item Weight`, `Best Sellers Rank`, `text_length` (of the product description), and a binary flag `is_top_electronics_brand`.
+        - Trained a `sklearn.linear_model.LinearRegression` model on these features.
+    - **Bag-of-Words (BoW) Linear Regression Pricer**:
+        - Used `sklearn.feature_extraction.text.CountVectorizer` (max 1000 features, English stop words) to create BoW representations from product descriptions (`item.test_prompt()` to avoid data leakage).
+        - Trained a Linear Regression model on these BoW features.
+    - **Word2Vec Linear Regression Pricer**:
+        - Preprocessed documents using `gensim.utils.simple_preprocess`.
+        - Trained a `gensim.models.Word2Vec` model (400 dimensions, window 5, min_count 1) on the training documents.
+        - Created document vectors by averaging the Word2Vec vectors of words in each document.
+        - Trained a Linear Regression model on these document vectors.
+    - **Support Vector Regressor (SVR) Pricer**:
+        - Trained an `sklearn.svm.LinearSVR` model using the Word2Vec document vectors.
+    - **Random Forest Pricer**:
+        - Trained an `sklearn.ensemble.RandomForestRegressor` (100 estimators) using the Word2Vec document vectors.
+- Analyzed the performance of each baseline model, noting their respective strengths and weaknesses as indicated by the evaluation metrics and visualizations. This provides a solid foundation for comparing the performance of more advanced fine-tuned LLMs.
+
+**Resources:**
+
+- [day3 notes.ipynb](./week6/notes/day3.ipynb)
+- [day3.ipynb](./week6/notebooks/day3.ipynb)
+
