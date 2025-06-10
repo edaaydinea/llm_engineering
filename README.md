@@ -44,6 +44,8 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 28: Building a Product Pricer - Baseline Models](#day-28-building-a-product-pricer---baseline-models)
     - [Day 29: Building a Product Pricer - Frontier Model Benchmarks](#day-29-building-a-product-pricer---frontier-model-benchmarks)
     - [Day 30: Building a Product Pricer - Fine-tuning with OpenAI](#day-30-building-a-product-pricer---fine-tuning-with-openai)
+  - [Week 7: Fine-tunes open-source model to compete with Frontier in price prediction](#week-7-fine-tunes-open-source-model-to-compete-with-frontier-in-price-prediction)
+    - [Day 31: Mastering PEFT: LoRA, Quantization, and QLoRA for Efficient Fine-Tuning](#day-31-mastering-peft-lora-quantization-and-qlora-for-efficient-fine-tuning)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -639,28 +641,42 @@ $$P = e^{L}$$
 
 - Embarked on fine-tuning a `gpt-4o-mini` model for the "Product Pricer" project using the OpenAI API.
 - Prepared the training and validation data:
-    - Selected the first 500 items from the curated training set (`train.pkl`) for fine-tuning (`fine_tune_train`).
-    - Selected the next 50 items for validation (`fine_tune_validation`).
-    - Defined a `messages_for` function to structure the data into the required conversational format (system, user, assistant messages), ensuring the assistant's message contained the correct price.
-    - Converted these datasets into JSONL (JSON Lines) format using a `make_jsonl` function.
-    - Wrote the JSONL data to `fine_tune_train.jsonl` and `fine_tune_validation.jsonl` files.
+  - Selected the first 500 items from the curated training set (`train.pkl`) for fine-tuning (`fine_tune_train`).
+  - Selected the next 50 items for validation (`fine_tune_validation`).
+  - Defined a `messages_for` function to structure the data into the required conversational format (system, user, assistant messages), ensuring the assistant's message contained the correct price.
+  - Converted these datasets into JSONL (JSON Lines) format using a `make_jsonl` function.
+  - Wrote the JSONL data to `fine_tune_train.jsonl` and `fine_tune_validation.jsonl` files.
 - Uploaded the training and validation files to OpenAI using `openai.files.create`.
 - Set up integration with Weights & Biases for monitoring the fine-tuning job by providing the project name.
 - Initiated the fine-tuning job using `openai.fine_tuning.jobs.create`:
-    - Specified the uploaded training and validation file IDs.
-    - Selected `gpt-4o-mini-2024-07-18` as the base model.
-    - Set `seed=42` for reproducibility.
-    - Configured hyperparameters for `n_epochs: 1`.
-    - Added a custom `suffix="pricer"` to the model name.
+  - Specified the uploaded training and validation file IDs.
+  - Selected `gpt-4o-mini-2024-07-18` as the base model.
+  - Set `seed=42` for reproducibility.
+  - Configured hyperparameters for `n_epochs: 1`.
+  - Added a custom `suffix="pricer"` to the model name.
 - Monitored the fine-tuning job status using `openai.fine_tuning.jobs.list()` and `openai.fine_tuning.jobs.retrieve()` to get the job ID and details.
 - Listed events associated with the fine-tuning job to track its progress.
 - Once the job was completed, retrieved the name of the fine-tuned model (`fine_tuned_model_name`).
 - Tested the performance of the newly fine-tuned model:
-    - Created a `gpt_fine_tuned` predictor function that uses the `fine_tuned_model_name` to make price estimations.
-    - Utilized the `Tester` class to evaluate the fine-tuned model on the test dataset (`test.pkl`), comparing its performance against previous benchmarks.
+  - Created a `gpt_fine_tuned` predictor function that uses the `fine_tuned_model_name` to make price estimations.
+  - Utilized the `Tester` class to evaluate the fine-tuned model on the test dataset (`test.pkl`), comparing its performance against previous benchmarks.
 
 **Resources:**
 
 - [day5 notes.ipynb](./week6/notes/day5.ipynb)
 - [day5.ipynb](./week6/notebooks/day5.ipynb)
 
+## Week 7: Fine-tunes open-source model to compete with Frontier in price prediction
+
+### Day 31: Mastering PEFT: LoRA, Quantization, and QLoRA for Efficient Fine-Tuning
+
+**What I did today:**
+
+- Mastered the theory behind Parameter-Efficient Fine-Tuning (PEFT), focusing on Low-Rank Adaptation (LoRA) as a method to efficiently customize large open-source models.
+- Grasped the critical role of Quantization in reducing model memory footprints, understanding how techniques like 8-bit and 4-bit precision make it feasible to load large models on consumer-grade GPUs.
+- Synthesized these concepts into a comprehensive understanding of QLoRA, a process that combines a quantized base model with high-precision LoRA adapters for efficient training.
+- Identified and understood the function of key QLoRA hyperparameters, including rank (`r`), `alpha`, and `target_modules`, and their role in controlling the fine-tuning process.
+- Gained practical experience using the Hugging Face `peft` and `bitsandbytes` libraries to manage and modify large language models.
+- Executed a hands-on demonstration of the VRAM bottleneck by attempting to load the 32GB Llama 3.1 8B model, confirming the necessity of quantization.
+- Successfully applied advanced 4-bit quantization (`nf4` with double quantization) to load the 8-billion-parameter model, reducing its in-memory size from over 32GB to approximately 5.6GB.
+- Analyzed the structure of a fine-tuned `PeftModel`, confirming that training was performed on only a small adapter (~109MB), which represents less than 0.4% of the total model parameters.
