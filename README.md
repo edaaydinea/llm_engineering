@@ -46,6 +46,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
     - [Day 30: Building a Product Pricer - Fine-tuning with OpenAI](#day-30-building-a-product-pricer---fine-tuning-with-openai)
   - [Week 7: Fine-tunes open-source model to compete with Frontier in price prediction](#week-7-fine-tunes-open-source-model-to-compete-with-frontier-in-price-prediction)
     - [Day 31: Mastering PEFT: LoRA, Quantization, and QLoRA for Efficient Fine-Tuning](#day-31-mastering-peft-lora-quantization-and-qlora-for-efficient-fine-tuning)
+    - [Day 32: Evaluating Base Model Performance and Tokenizer Analysis](#day-32-evaluating-base-model-performance-and-tokenizer-analysis)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -680,3 +681,27 @@ $$P = e^{L}$$
 - Executed a hands-on demonstration of the VRAM bottleneck by attempting to load the 32GB Llama 3.1 8B model, confirming the necessity of quantization.
 - Successfully applied advanced 4-bit quantization (`nf4` with double quantization) to load the 8-billion-parameter model, reducing its in-memory size from over 32GB to approximately 5.6GB.
 - Analyzed the structure of a fine-tuned `PeftModel`, confirming that training was performed on only a small adapter (~109MB), which represents less than 0.4% of the total model parameters.
+
+**Resources:**
+
+- [day1 notes.ipynb](./week7/notes/day1.ipynb)
+- [day1.ipynb](./week7/notebooks/day1.ipynb)
+
+### Day 32: Evaluating Base Model Performance and Tokenizer Analysis
+
+**What I did today:**
+
+- Investigated the tokenization strategies of various LLMs (Llama 3.1, Qwen 2.5, Gemma 2, Phi-3) to understand how they represent numerical data, particularly prices.
+- Confirmed that Llama 3.1 tokenizes numbers up to 999 into a single token, which is advantageous for the price prediction task.
+- Loaded the curated product pricing dataset from Hugging Face.
+- Set up and loaded a 4-bit quantized Llama 3.1 8B base model.
+- Implemented a `Tester` class to evaluate model performance, including calculating error metrics and generating scatter plots.
+- Evaluated the baseline performance of the un-fine-tuned Llama 3.1 8B model (both 4-bit and 8-bit quantized versions) on the test dataset.
+- Observed that the base model performed poorly on the specialized price prediction task (e.g., 4-bit model had a mean error of ~$395, 8-bit model ~$301), establishing a clear need for fine-tuning.
+- Compared the base model's performance against other benchmarks, highlighting the gap to frontier models like GPT-4 and even simpler heuristics.
+
+**Resources:**
+
+- [day2 notes.ipynb](./week7/notes/day2.ipynb)
+- [day2.ipynb](./week7/notebooks/day2.ipynb)
+
