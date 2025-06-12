@@ -47,6 +47,7 @@ This course provides a comprehensive guide to mastering AI, focusing on Large La
   - [Week 7: Fine-tunes open-source model to compete with Frontier in price prediction](#week-7-fine-tunes-open-source-model-to-compete-with-frontier-in-price-prediction)
     - [Day 31: Mastering PEFT: LoRA, Quantization, and QLoRA for Efficient Fine-Tuning](#day-31-mastering-peft-lora-quantization-and-qlora-for-efficient-fine-tuning)
     - [Day 32: Evaluating Base Model Performance and Tokenizer Analysis](#day-32-evaluating-base-model-performance-and-tokenizer-analysis)
+    - [Day 33: Deep Dive into QLoRA Hyperparameters and Launching Fine-Tuning](#day-33-deep-dive-into-qlora-hyperparameters-and-launching-fine-tuning)
 
 ## Week 1 - Build Your First LLM Product: Exploring Top Models & Transformers
 
@@ -704,4 +705,39 @@ $$P = e^{L}$$
 
 - [day2 notes.ipynb](./week7/notes/day2.ipynb)
 - [day2.ipynb](./week7/notebooks/day2.ipynb)
+
+### Day 33: Deep Dive into QLoRA Hyperparameters and Launching Fine-Tuning
+
+**What I did today:**
+
+- Gained a comprehensive understanding of key QLoRA hyperparameters for efficient fine-tuning:
+  - **Target Modules**: Identified specific layers (e.g., attention projections) for applying LoRA adapters.
+  - **Rank (`r`)**: Understood its role in defining the dimensionality and trainable parameters of adapter matrices (e.g., `r=32`).
+  - **LoRA Alpha**: Learned about this scaling factor for adapter outputs (e.g., `alpha=64`, often `2*r`).
+  - **Quantization**: Reviewed its importance in reducing base model memory footprint (e.g., 4-bit).
+  - **Dropout**: Understood its use as a regularization technique to prevent overfitting (e.g., `lora_dropout=0.1`).
+- Explored fundamental training process hyperparameters:
+  - **Epochs**: Learned how multiple passes over the data refine model parameters and the risk of overfitting.
+  - **Batch Size**: Understood its impact on computational efficiency and memory, and its interaction with epochs.
+  - **Learning Rate**: Grasped its function in determining weight adjustment size and the utility of learning rate schedulers (e.g., `cosine` scheduler with `warmup_ratio`).
+  - **Gradient Accumulation**: Learned how it allows for larger effective batch sizes.
+  - **Optimizer**: Understood its role in applying weight changes (e.g., `paged_adamw_32bit`).
+- Prepared the environment for fine-tuning the Llama 3.1 8B model:
+  - Discussed GPU selection (e.g., A100 vs. T4) and its impact on `batch_size`.
+  - Set up project naming conventions for experiment tracking (e.g., with Weights & Biases).
+- Configured the `SFTTrainer` from the TRL library:
+  - Logged into Hugging Face and Weights & Biases.
+  - Loaded and verified the training dataset.
+  - Set up the 4-bit quantized base model and tokenizer (with right-padding).
+  - Implemented `DataCollatorForCompletionOnlyLM` with a `response_template` (e.g., `"Price is $"`) to focus training on predicting the price.
+  - Organized parameters into `LoraConfig` and `TrainingArguments`.
+- Launched the supervised fine-tuning (SFT) job using `trainer.train()`:
+  - Observed initial GPU memory consumption and training log outputs (loss, estimated time).
+  - Noted the decision to skip in-training evaluation for speed, while acknowledging it as a best practice.
+- Emphasized the importance of monitoring training with tools like Weights & Biases and discussed cost-effective training strategies.
+
+**Resources:**
+
+- [day3 notes.ipynb](./week7/notes/day3.ipynb)
+- [day3.ipynb](./week7/notebooks/day3_4.ipynb)
 
